@@ -1,0 +1,72 @@
+Understanding of Random Forest
+17 Oct 2017
+
+Ben Lei
+ben181231@gmail.com
+
+
+* Overview
+
+- Ensemble Trees
+- Randomness of Forest
+- Bootstrap Aggregating
+- Random Feature Selection
+- Misc.
+
+* Ensemble Trees
+
+- Forest = n x Tree
+- Forest can be used for both *Classification* and *Regression*.
+
+.code ./random-forest-assets/ensemble-trees.py
+
+* Randomness of Forest
+
+- Why need randomness?
+
+Training each tree with independent random vector can solve overfitting problem which is significant in decision tree.
+
+.code ./random-forest-assets/random-training-vector.py
+
+* Randomness of Forest (Con't)
+
+- How randomness involves?
+
+1. Randomness in training data - *Bootstrap* *Aggregating*
+2. Randomness in tree building - *Random* *Feature* *Selection*
+
+* Bootstrap Aggregating / Bagging
+
+- Idea
+
+When preparing data for tree training, only use *randomized* *subset* to train a tree.
+
+- Effect
+
+Each tree would have some independence.
+
+.code ./random-forest-assets/bagging-traning.py
+
+* Random Feature Selection
+
+- Idea
+
+During the training process of a tree, only use *randomized* *subset* of features to find the sub-optimal best split.
+
+- Effect
+
+Each tree will not overfit with training data.
+
+.code ./random-forest-assets/random-feature-selection.py
+
+* Other interesting findings
+
+- Out-of-bag (OOB) Estimation
+
+During the bagging procedure, each tree will have around 37% data not seen, when the bagging size become large:
+
+.image ./random-forest-assets/oob-equation.svg _ 300
+
+By marking those unseen data, it can be used to estimate the quality of the tree.
+
+.image ./random-forest-assets/bagging-traning.png _ 450
