@@ -1,0 +1,18 @@
+
+           +-----------+              +--------------+
+   Data    |           |              |              |
+  Stream   | Behaviour |  Behaviour   | Unsupervised |
+---------> | Analysis  | -----------> |   Learning   |
+           |           |              |              |
+           +-----------+              +--------------+
+                                             |
+                                             |
+                                             | Outliners
+                                             |
+                                             v
+                                       +------------+
+                                       |            |
+                               Result  | Supervised |
+                             <-------- |  Learning  |
+                                       |            |
+                                       +------------+

@@ -1,0 +1,62 @@
+Proposal of Active Learning System
+31 Oct 2017
+
+Ben Lei
+ben181231@gmail.com
+
+
+* Overview
+
+- System Architecture
+- Behaviour Analysis
+- Outliners Detection
+
+* System Architecture
+
+- Contains 3 flows: training, online and feedback
+
+* System Architecture
+
+*Training* *Flow*
+
+.code ./active-learning-system-asset/training-flow.txt
+
+* System Architecture (Con't)
+
+*Online* *Flow*
+
+.code ./active-learning-system-asset/online-flow.txt
+
+* System Architecture (Con't)
+
+*Feedback* *Flow*
+
+.code ./active-learning-system-asset/feedback-flow.txt
+
+* Behaviour Analysis
+
+- Work as *Feature* *Extraction*
+- Working on a stream --> require "near realtime"
+- Allow having states in a short time window (something like 5 mins)
+- State is useful for computing: _statistics_, _indicators_, _relational_ _records_
+
+* Outliners Detection
+
+Use general unsupervised learning methods
+
+- Matrix Factorisation
+- Replicator Neural Networks
+- Density-based Clustering
+- Isolation Forest
+
+* Outliners Detection (Con't)
+
+Ensemble methods ?
+
+- Different Magnitude
+- Top-k means differently
+
+Solution
+
+- Normalise
+- Probability Distributions
