@@ -1,8 +1,8 @@
-+--------------+   Feedback   +------------+
-|              | <----------- |            |
-| Unsupervised |              |  Analyst   |
-|   Learning   |  Outliners   | Interface  |
++--------------+  Outliners   +------------+
 |              | -----------> |            |
+| Unsupervised |              |  Analyst   |
+|   Learning   |   Feedback   | Interface  |
+|              | <----------- |            |
 +--------------+              +------------+
        |                         ^    |
        |                         |    |

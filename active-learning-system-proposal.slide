@@ -10,6 +10,7 @@ ben181231@gmail.com
 - System Architecture
 - Behaviour Analysis
 - Outliners Detection
+- Extensibility
 
 * System Architecture
 
@@ -60,3 +61,14 @@ Solution
 
 - Normalise
 - Probability Distributions
+
+* Extensibility
+
+1. Cloud Computing System
+
+- On top of [[http://storm.apache.org][Storm]] / [[https://spark.apache.org/streaming/][Spark Streaming]] for fast prototyping
+- Customise our own streaming system
+
+2. Self-feedback
+
+- Supervised Model send feedback to Unsupervised Model
