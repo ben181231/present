@@ -1,4 +1,4 @@
-+--------------+  Outliners   +------------+
++--------------+   Outliers   +------------+
 |              | -----------> |            |
 | Unsupervised |              |  Analyst   |
 |   Learning   |   Feedback   | Interface  |
@@ -6,7 +6,7 @@
 +--------------+              +------------+
        |                         ^    |
        |                         |    |
-       | Outliners               |    | Feedback
+       | Outliers                |    | Feedback
        |                         |    |
        v                         |    |
  +------------+                  |    |

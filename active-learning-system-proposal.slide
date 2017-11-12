@@ -9,7 +9,7 @@ ben181231@gmail.com
 
 - System Architecture
 - Behaviour Analysis
-- Outliners Detection
+- Outliers Detection
 - Extensibility
 
 * System Architecture
@@ -41,7 +41,7 @@ ben181231@gmail.com
 - Allow having states in a short time window (something like 5 mins)
 - State is useful for computing: _statistics_, _indicators_, _relational_ _records_
 
-* Outliners Detection
+* Outliers Detection
 
 Use general unsupervised learning methods
 
@@ -50,7 +50,7 @@ Use general unsupervised learning methods
 - Density-based Clustering
 - Isolation Forest
 
-* Outliners Detection (Con't)
+* Outliers Detection (Con't)
 
 Ensemble methods ?
 

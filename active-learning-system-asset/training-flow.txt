@@ -1,6 +1,6 @@
            +-----------+              +--------------+              +------------+
    Data    |           |              |              |              |            |
-  Stream   | Behaviour |  Behaviour   | Unsupervised |  Outliners   |  Analyst   |
+  Stream   | Behaviour |  Behaviour   | Unsupervised |   Outliers   |  Analyst   |
 ---------> | Analysis  | -----------> |   Learning   | -----------> | Interface  |
            |           |              |              |              |            |
            +-----------+              +--------------+              +------------+
