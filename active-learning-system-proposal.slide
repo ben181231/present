@@ -1,5 +1,6 @@
 Proposal of Active Learning System
-31 Oct 2017
+31 Oct 2017 (Updated at 25 Nov 2017)
+
 
 Ben Lei
 ben181231@gmail.com
@@ -7,41 +8,42 @@ ben181231@gmail.com
 
 * Overview
 
-- System Architecture
-- Behaviour Analysis
-- Outliers Detection
-- Extensibility
+- System Flows
+- System Components
+- Future Work
 
-* System Architecture
+* System Flows
 
-- Contains 3 flows: training, online and feedback
+- Training Flow
+- Online Flow
+- Feedback Flow
 
-* System Architecture
+* System Flows
 
 *Training* *Flow*
 
 .code ./active-learning-system-asset/training-flow.txt
 
-* System Architecture (Con't)
+* System Flows (Con't)
 
 *Online* *Flow*
 
 .code ./active-learning-system-asset/online-flow.txt
 
-* System Architecture (Con't)
+* System Flows (Con't)
 
 *Feedback* *Flow*
 
 .code ./active-learning-system-asset/feedback-flow.txt
 
-* Behaviour Analysis
+* Behaviour Analysis Module
 
 - Work as *Feature* *Extraction*
-- Working on a stream --> require "near realtime"
+- Working on a "near realtime" stream
 - Allow having states in a short time window (something like 5 mins)
 - State is useful for computing: _statistics_, _indicators_, _relational_ _records_
 
-* Outliers Detection
+* Outliers Detection Module
 
 Use general unsupervised learning methods
 
@@ -50,7 +52,7 @@ Use general unsupervised learning methods
 - Density-based Clustering
 - Isolation Forest
 
-* Outliers Detection (Con't)
+* Outliers Detection Module (Con't)
 
 Ensemble methods ?
 
@@ -62,9 +64,42 @@ Solution
 - Normalise
 - Probability Distributions
 
-* Extensibility
+* System Components
 
-1. Cloud Computing System
+- Data Feeder
+- Typology Builder
+- Persistent Store Adapter
+- Event Logger
+
+* System Components (Con't)
+
+*Data* *Feeder*
+- Adapt different data sources
+- Feed data into the typology
+
+Data Sources
+- String (for development)
+- File
+- URI
+
+* System Components (Con't)
+
+*Typology* *Builder*
+- Load and initialise the user-facing modules
+- Build the system modules typology
+
+* System Components (Con't)
+*Persistent* *Store* *Adapter*
+- Provide data persistency capability to user-facing modules
+- Adapt to different types of persistent store
+
+Persistent Store
+- File Store
+- Database Store (Relational / Key-value based / Document based)
+
+* Future Work
+
+1. Implementation
 
 - On top of [[http://storm.apache.org][Storm]] / [[https://spark.apache.org/streaming/][Spark Streaming]] for fast prototyping
 - Customise our own streaming system
